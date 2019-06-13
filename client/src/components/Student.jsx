@@ -2,8 +2,9 @@ import React from 'react';
 
 const Student = props => (
   <div className="student">
-    <div className="name">Name: {props.student.firstName} {props.student.lastName}</div>
-    <h3 className="attenPer">Attendance Percentage: {props.student.attendancePercentage}%</h3>
+    <h2 className="name">Name: {props.student.firstName} {props.student.lastName}</h2>
+    <h3 className="attenPer">Absent Percentage: {100 - props.student.attendancePercentage}%</h3>
+    <div className="attenPer">Attendance Percentage: {props.student.attendancePercentage}%</div>
     <div className="grade">Grade: {props.student.grade}</div>
     <div className="cohort">Cohort: {props.student.cohort}</div>
     <div className="email">Email: {props.student.email}</div>
