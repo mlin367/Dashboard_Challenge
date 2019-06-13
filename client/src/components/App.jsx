@@ -22,11 +22,11 @@ class App extends React.Component {
     return (
       <div className="app">
         <h1>Attendance Checker</h1>
-        <input onChange={(e) => this.setState({ threshold: e.target.value })} type="number" step="0.01" min="0" max="100" value={this.state.threshold} />
+        <input onChange={(e) => this.setState({ threshold: e.target.value })} type="number" step="0.01" min="0.00" max="40.00" value={this.state.threshold} />
         <input className="slider" onChange={(e) => this.setState({ threshold: e.target.value })} type="range" min="0.00" max="40.00" value={this.state.threshold} step="0.01"  />
         <h3>{this.state.threshold}</h3>
         {this.state.data.map((student, i) => {
-          if ((100 - student.attendancePercentage).toFixed(2) >= this.state.threshold) {
+          if (Number((100 - student.attendancePercentage).toFixed(2)) >= this.state.threshold) {
             return <Student student={student} key={i} />
           }
         })}
