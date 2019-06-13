@@ -12,6 +12,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    data.default.sort((a, b) => b.attendancePercentage - a.attendancePercentage);
     this.setState({
       data: data.default
     })
