@@ -2,16 +2,16 @@ import React from 'react';
 
 const Student = props => (
   <div className="student">
-    <div className="name">Name: {props.firstName} {props.lastName}</div>
-    <h3 className="attenPer">Attendance Percentage: {props.attendancePercentage}%</h3>
-    <div className="grade">Grade: {props.grade}</div>
-    <div className="cohort">Cohort: {props.cohort}</div>
-    <div className="email">Email: {props.email}</div>
-    <div className="phone">Home Phone: {props.homePhoneNumber}</div>
-    <div className="counselor">Guidance Counselor: {props.guidanceCounselor}</div>
-    <div className="advisor">Advisor: {props.advisor}</div>
-    <div className="officialClass">Official Class: {props.officialClass}</div>
-    <div className="status">Status: {props.status}</div>
+    <div className="name">Name: {props.student.firstName} {props.student.lastName}</div>
+    <h3 className="attenPer">Attendance Percentage: {props.student.attendancePercentage}%</h3>
+    <div className="grade">Grade: {props.student.grade}</div>
+    <div className="cohort">Cohort: {props.student.cohort}</div>
+    <div className="email">Email: {props.student.email}</div>
+    <div className="phone">Home Phone: {props.student.homePhoneNumber}</div>
+    <div className="counselor">Guidance Counselor: {props.student.guidanceCounselor}</div>
+    <div className="advisor">Advisor: {props.student.advisor}</div>
+    <div className="officialClass">Official Class: {props.student.officialClass}</div>
+    <div className="status">Status: {props.student.status}</div>
   </div>
 );
 
