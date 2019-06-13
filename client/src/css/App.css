@@ -1,0 +1,12 @@
+.appWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider, .box {
+  width: fit-content;
+}
+
+.app {
+  font-family: 'Pangolin', cursive;
+}
